@@ -88,7 +88,7 @@
       }
       .samples {
         padding-bottom: 16px;
-        display: flex; 
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -113,7 +113,7 @@
         border: none;
         color: #333;
         line-height: 32px;
-        background-position: right; 
+        background-position: right;
       }
       .samples .card h5 {
         font-size: 14px;
@@ -133,19 +133,7 @@
       }
       .samples .card .buttons {
         display: flex;
-        border-top: solid 1px #ccc;
         width: 100%;
-        padding: 8px;
-        margin-top: auto;
-      }
-      .samples .card .buttons .button {
-        text-align: left;
-        color: #eb407a;
-        font-weight: 700;
-        -webkit-tap-highlight-color: #eee;
-
-        letter-spacing: .1px;
-        padding: 0 16px;
       }
       .samples .card a:hover {
         background-color: #eee;
@@ -207,19 +195,19 @@
     {{#categories}}
     <div class="category-container">
       <section id="{{url}}" class="category">
-        <h4>{{name}}</h4> 
+        <h4>{{name}}</h4>
         {{#description}} <p class="description">{{{description}}}</p> {{/description}}
         <div class="samples">
           {{#examples}}
           <div class="card{{#experiment}} experiment{{/experiment}}{{#highlight}} highlight{{/highlight}}">
             <h4 class="{{#experiment}}amp-experiment-medium{{/experiment}}">
               {{title}}
-            </h4> 
+            </h4>
             {{#description}} <p class="description">{{{ description }}}</p> {{/description}}
-            <div class="buttons">
-              <a class="button" href="{{url}}">View Sample</a>
+            <div class="mxn1 buttons">
+              <a class="ampstart-btn caps m1" href="{{url}}">View Sample</a>
               {{#metadata.preview}}
-              <a class="button" href="{{urlPreview}}">View Demo</a>
+              <a class="ampstart-btn caps m1" href="{{urlPreview}}">View Demo</a>
               {{/metadata.preview}}
             </div>
           </div>
